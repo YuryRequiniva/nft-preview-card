@@ -1,25 +1,32 @@
 html,
 body {
-  font-family: "Atuendo", sans-serif;
-  font-size: 25px;
+  font-family: "Outfit", sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 3rem;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(215, 55%, 11%);
-  color: (216, 50%, 16%);
-  box-shadow: 10px 10px 20px 20px;
-}
-main {
-  width: 100%;
-}
-.container-image {
-  width: 100%;
+  color: hsl(215, 51%, 70%);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(215, 55%, 11%);
+}
+main {
+  max-width: 400px;
+  box-shadow: 2px 0px 35px 28px rgba(8, 18, 31, 1);
+  padding: 18px 25px;
+  border-radius: 8px;
+  background-color: hsl(214, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+}
+.container-image {
+  width: 100%;
+  position: relative;
+}
+.main-image {
+  width: 100%;
+  border-radius: 12px;
 }
 h2 {
   text-align: left;
@@ -28,7 +35,7 @@ h2 {
 .info {
   font-size: 1.5em;
   text-align: center;
-  color: rgba(57, 58, 96, 0.525);
+  color: #5a90bbab;
 }
 .elements {
   display: flex;
@@ -45,75 +52,68 @@ h3 {
 }
 h4 {
   font-size: 1em;
-  color: rgba(57, 58, 96, 0.525);
+  color: #5fa2d9ab;
 }
 .avatar_img {
   height: 28px;
   border: solid 2px white;
   border-radius: 50%;
-  margin: 4px 15px 0 0;
+  margin: 4px 5px 0 0;
 }
 .avatar {
   display: flex;
-  justify-content: flex-start;
-}
-.icon-2 {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 5px;
+  align-items: left;
+  gap: 5 px;
+}
+hr {
+  height: 1.2px;
+  border: none;
+  background-color: hsl(215, 32%, 27%);
+  margin: 0 0 10px 0;
 }
 p {
   font-size: 0.9em;
   display: flex;
   justify-content: left;
   align-items: left;
-  color: rgba(57, 58, 96, 0.525);
+  color: #5fa2d9ab;
+  gap: 7px;
 }
-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+a:link {
+  color: #ffffffab;
+  text-decoration: none;
 }
-[class="text-2"] {
-  color: #fff;
+a:hover,
+h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.main-image:hover {
+  background-color: hsl(178, 100%, 50%);
 }
 .icon-e {
   cursor: pointer;
 }
-.icon-view:hover {
-  visibility: hidden;
-  transition: 1.5ms;
+.icon-e {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .icon-e:hover {
-  visibility: visible;
-  transition: 1ms;
+  opacity: 1;
 }
-.icon-e {
-  width: 30%;
-  height: 604px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  flex-direction: column;
-  background-color: rgba(114, 193, 250, 0.901);
-  /*opacity: .1;*/
-  visibility: hidden;
-}
-.icon-view {
-  visibility: visible;
-}
-.text {
-  cursor: pointer;
-}
-.text:hover {
-  color: hsl(178, 100%, 50%);
-}
-a[target="_blank"] {
-  cursor: pointer;
-}
-a[target="_blank"]:hover {
-  color: hsl(178, 100%, 50%);
+
+footer {
+  margin-top: 20px;
 }
